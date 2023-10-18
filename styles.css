@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+  }
+
+input:invalid{
+    border-color: red;
+}
+
+input:valid{
+    border-color: green;
+}
+
+form{
+    background-color: white;
+}
+
+body{
+    color: #5D6063;
+    background-color: lightgray;
+    font-family: "Helvetica", "Arial", sans-serif;
+    font-size: 16px;
+    line-height: 1.3;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+div, header{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.image{
+    position: relative;
+    height: 100vh;
+}
+
+#leaves{
+    position: fixed;
+    width: 30vw;
+    height: 100vh;
+}
+
+#odin_holder{
+    position: relative;
+    top: 10rem;
+    background-color: black;
+    color: white;
+    opacity: 0.75;
+    width: 30vw;
+    height: 10rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#odin{
+    min-width: 5rem ;
+    max-height: 10rem;
+}
+
+#credit{
+    position: fixed;
+    bottom: 10px;
+    color: white;
+    font-size: 1rem;
+}
+a:visited{
+    color: white;
+}
