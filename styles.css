@@ -55,9 +55,11 @@ div, header{
     height: 10rem;
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-content: stretch;
+    justify-content: center;
     text-align: center;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 3rem;
 }
 
 #odin{
