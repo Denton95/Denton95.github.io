@@ -13,6 +13,21 @@
     border-color: black;
 }
 
+input[type=button]{
+    margin: 1rem;
+    margin-left: 5vw;
+    background-color: #596D48;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-size: larger;
+    width: 15rem;
+    height: 3rem;
+    border-radius: 1rem;
+    border:none;
+    box-shadow: #0f1010 0.1rem 0.2rem;
+}
+
 input:invalid{
     border-color: red;
 }
@@ -24,18 +39,16 @@ input:hover{
 }
 input:focus{
     border-color: blue;
-    box-shadow: slategray 0px 0.1rem;
+    box-shadow: #0f1010 0.1rem 0.1rem;
 } 
 
 input{
     border-style:solid;
     border-width: 0.1rem;
     padding:3px;
-    /* border-top:0;
-    border-left:0;
-    border-right:0; */
     width: 15vw;
     height: 1.5rem;
+    flex-wrap: wrap;
 }
 
 a, a:visited{
@@ -46,15 +59,15 @@ label{
     font-size: 12px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bold;
+    flex-wrap: wrap;
 }
 
 form{
-    background-color: white;
-    padding-right: 5vw;
-    padding-left: 5vw;
     display: flex;
     flex-direction: column;
-    width: 65vw;
+    align-items: start;
+    flex-wrap: wrap;
+    margin-bottom: 10vh;
 }
 
 fieldset{
@@ -62,12 +75,16 @@ fieldset{
     display: flex;
     flex-direction: row;
     flex: auto;
+    flex-wrap: wrap;
+    padding-left: 5vw;
+    margin: 0;
+
 }
 
 body{
     color: #5D6063;
-    background-color: lightgray;
-    font-family: "Helvetica", "Arial", sans-serif;
+    background-color: rgb(247, 248, 250);
+    font-family:Arial, Helvetica, sans-serif;
     font-size: 16px;
     line-height: 1.3;
     display: flex;
@@ -93,17 +110,29 @@ header{
     padding-left: 5vw;
 }
 
+legend{
+    padding-left: 5vw;
+    border: 0px;
+}
+
 .wrapper{
     flex: auto;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    align-content: space-between;
     align-items: stretch;
     text-align:left;
     justify-content: space-around;
     justify-items: stretch;
     max-width: 65vw;
+    padding-top: 5vh;
+}
+.input{
+    background-color: white;
+    width: 65vw;
+    box-shadow: slategray 0px 0.2rem;
+    align-items: flex-start;
+    justify-content: flex-start;
 }
 
 .image{
@@ -115,17 +144,14 @@ header{
 
 .fieldgroup{
     margin: 1rem;
+    margin-left: 0;
     text-align: left;
     display: flex;
+    flex: 1 0 0;
+    flex-wrap: wrap;
     flex-direction: column;
     align-items: flex-start;
     width: 15vw;
-    margin-left: 50px;
-    margin-right: 50px;
-}
-
-.input{
-    box-shadow: slategray 0px 0.2rem;
 }
 
 #leaves{
@@ -148,7 +174,6 @@ header{
     justify-content: center;
     text-align: center;
     font-family: odin;
-   
     font-size: 3rem;
 }
 
@@ -158,9 +183,19 @@ header{
     opacity: 1;
 }
 
+
+#bottom{
+    margin-left: 5vw;
+}
 #credit{
     position: fixed;
     bottom: 10px;
     color: white;
     font-size: 1rem;
+}
+
+#login{
+    text-decoration: underline;
+    color: #596D48;
+    font-weight: bold;
 }

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Html Form</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
 </head>
 <body>
     <div class="image">
@@ -23,8 +24,8 @@
         <header>
             <h1>You <em>know</em> you want to.</h1>
         </header>
-        <div class="input">
             <form action="" method="post">
+                <div class="input">
                     <legend><h1>Let's do this!</h1></legend>
                     <fieldset>
                         <div class="fieldgroup">
@@ -49,15 +50,20 @@
                     <fieldset>
                         <div class="fieldgroup">
                             <label for="password">PASSWORD</label>
-                            <input type="password" name="password" id="password" placeholder="" required>
+                            <input type="password" name="password" id="password" placeholder="" onkeyup='passwordCheck();' required>
                         </div>
                         <div class="fieldgroup">
                             <label for="confirm_password">CONFIRM PASSWORD</label>
-                            <input type="confirm_password" name="confirm_password" id="confirm_password" placeholder="" required>
+                            <input type="password" name="confirm_password" id="confirm_password" placeholder="" onkeyup='passwordCheck();'required>
                         </div>
                     </fieldset>
+                    <p id="password_warning"></p>
+                </div>
+                <div class="submission">
+                    <input type="button" value="Create Account">
+                    <p id="bottom">Already have an account? <a href="" id="login">Log In</a></p>
+                </div>
             </form>
-        </div>
     </div>
 </body>
 </html>
