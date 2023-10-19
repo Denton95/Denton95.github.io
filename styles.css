@@ -9,6 +9,9 @@
     font-family: odin;
     src: url(norse-bold.otf);
 }
+#first_name:hover{
+    border-color: black;
+}
 
 input:invalid{
     border-color: red;
@@ -16,9 +19,13 @@ input:invalid{
 input:placeholder-shown{
     border-color: rgb(236, 236, 236);
 }
-input:valid{
-    border-color: green;
+input:hover{
+    border: 1px solid black;
 }
+input:focus{
+    border-color: blue;
+    box-shadow: slategray 0px 0.1rem;
+} 
 
 input{
     border-style:solid;
